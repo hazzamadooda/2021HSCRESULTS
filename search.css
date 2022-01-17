@@ -1,0 +1,258 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: white;
+    padding: 0 20px;
+}
+
+
+.wrapper {
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+
+.search-input input {
+    height: 55px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    border: 2px solid #636e72;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.classes .turnblue {
+    width: 375px;
+    height: 150px;
+    background: white;
+    overflow-y: scroll;
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    float: left;
+    line-height:normal;
+    text-align:center;
+}
+
+
+.classes a {
+    color: white;
+    display: flex;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #2d3436;
+    background: red;
+}
+
+.classes p {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    height: auto;
+}
+
+.dark-mode .classes p {
+    color: white;
+}
+
+/*  */
+
+.Hamburger_menu {
+    border-bottom: 1px solid #778ca3;
+    height: 80px;
+    line-height: 70px;
+}
+
+    .Hamburger_menu .hamburger_cross_icon {
+        margin: 10px 38px 0 0;
+        font-size: 26px;
+        line-height: 70px;
+        display: none;
+        cursor: pointer;
+        width: 26px;
+        float: right;
+        transition-duration: 1s;
+        transition-property: transform;
+    }
+
+        .Hamburger_menu .hamburger_cross_icon:hover {
+            transform: rotate(180);
+            -webkit-transform: rotate(180deg);
+        }
+
+.hamburger_icon {
+    margin: 10px 38px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    cursor: pointer;
+    width: 26px;
+    float: right;
+}
+
+.hamburger_checkbox {
+    display: none;
+}
+
+.header {
+    margin: -100px 10px 0 0;
+    text-align: right;
+    margin-top:-30px;
+    line-height:normal;
+}
+
+    .header a {
+        clear: right;
+        text-decoration: none;
+        color: gray;
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+        .header a:hover {
+            background: #26de81;
+            color: #ffffff;
+        }
+
+    .header ul {
+        padding-inline-start: 0;
+        width: 95%;
+    }
+
+.logo {
+    width: auto;
+    height: 85px;
+    cursor: crosshair;
+}
+
+.dark-mode .logo {
+   filter:invert(1);
+}
+
+@media only screen and (max-width:760px) {
+    .title {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .hamburger_icon {
+        display: block;
+    }
+
+    .header {
+        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 5px 5px 0 0;
+        padding-left: 0;
+    }
+
+        .header a {
+            display: block;
+            border-bottom: 1px solid black;
+        }
+
+    .dark-mode .header a {
+        display: block;
+        border-bottom: 1px solid white;
+    }
+
+    .header a:hover {
+        background: #26de81;
+        color: #ffffff;
+    }
+
+    input:checked ~ .header {
+        display: block;
+    }
+
+    input:checked ~ .hamburger_cross_icon {
+        display: block;
+    }
+
+    input:checked ~ .hamburger_icon {
+        display: none;
+    }
+
+    input:checked ~ .classes {
+        display: none;
+    }
+
+    input:checked ~ .wrapper {
+        display: none;
+    }
+
+    .title {
+        display: inline;
+        right: 28%;
+    }
+}
+
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+    .dark-mode input {
+        background: black;
+        color: white;
+        border: white solid 2px;
+    }
+
+    .dark-mode .turnblue {
+        border: 2px solid white;
+        background: black;
+        color:white;
+    }
+
+.Help_Input{
+    line-height:normal;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+}
+
+.search_bar {
+    color: black;
+}
+
+.dark_mode_class {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    position: absolute;
+    right: 5%;
+    height: 0;
+    width: 0;
+    top: 1.7%;
+}
+
+.title {
+    position: absolute;
+    top: 2%;
+    left: auto;
+    font-size: 35px;
+    line-height:normal;
+    font-family: 'Montserrat', sans-serif;
+}
