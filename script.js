@@ -19,7 +19,7 @@ inputBox.addEventListener("keyup", e => {
 
     const searchTerms = e.target.value.split(/[,\s]+/).map(str => str.toLowerCase());
     for (const item of dict) {
-        if (!searchTerms.every(term => [item.full_name, item.school_name, item.band_6].some(name => name.toLowerCase().includes(term)))) continue;
+        if(!searchTerms.every(term => item.full_name.toLowerCase().includes(term))) continue;
 
         
         // This is the algorithm basically, if something starts with the letter that is typed in then do the following
